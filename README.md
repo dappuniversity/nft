@@ -10,7 +10,7 @@ Metamask: https://metamask.io/ <br/>
 <br/>
 ## Step 1. Clone the project
 ```bash 
-git clone https://github.com/dharmveersinh/nft
+https://github.com/dappuniversity/nft.git
 ```
 
 ## Step 2. Install dependencies
