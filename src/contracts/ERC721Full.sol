@@ -1,5 +1,5 @@
 
-// File: @openzeppelin/contracts/introspection/IERC165.sol
+// File: node_modules\@openzeppelin\contracts\introspection\IERC165.sol
 
 pragma solidity ^0.5.0;
 
@@ -24,7 +24,7 @@ interface IERC165 {
     function supportsInterface(bytes4 interfaceId) external view returns (bool);
 }
 
-// File: @openzeppelin/contracts/token/ERC721/IERC721.sol
+// File: node_modules\@openzeppelin\contracts\token\ERC721\IERC721.sol
 
 pragma solidity ^0.5.0;
 
@@ -79,7 +79,7 @@ contract IERC721 is IERC165 {
     function safeTransferFrom(address from, address to, uint256 tokenId, bytes memory data) public;
 }
 
-// File: @openzeppelin/contracts/token/ERC721/IERC721Receiver.sol
+// File: node_modules\@openzeppelin\contracts\token\ERC721\IERC721Receiver.sol
 
 pragma solidity ^0.5.0;
 
@@ -107,7 +107,7 @@ contract IERC721Receiver {
     public returns (bytes4);
 }
 
-// File: @openzeppelin/contracts/math/SafeMath.sol
+// File: node_modules\@openzeppelin\contracts\math\SafeMath.sol
 
 pragma solidity ^0.5.0;
 
@@ -217,7 +217,7 @@ library SafeMath {
     }
 }
 
-// File: @openzeppelin/contracts/utils/Address.sol
+// File: node_modules\@openzeppelin\contracts\utils\Address.sol
 
 pragma solidity ^0.5.0;
 
@@ -247,7 +247,7 @@ library Address {
     }
 }
 
-// File: @openzeppelin/contracts/drafts/Counters.sol
+// File: node_modules\@openzeppelin\contracts\drafts\Counters.sol
 
 pragma solidity ^0.5.0;
 
@@ -286,7 +286,7 @@ library Counters {
     }
 }
 
-// File: @openzeppelin/contracts/introspection/ERC165.sol
+// File: node_modules\@openzeppelin\contracts\introspection\ERC165.sol
 
 pragma solidity ^0.5.0;
 
@@ -340,7 +340,7 @@ contract ERC165 is IERC165 {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC721/ERC721.sol
+// File: node_modules\@openzeppelin\contracts\token\ERC721\ERC721.sol
 
 pragma solidity ^0.5.0;
 
@@ -641,7 +641,7 @@ contract ERC721 is ERC165, IERC721 {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol
+// File: node_modules\@openzeppelin\contracts\token\ERC721\IERC721Enumerable.sol
 
 pragma solidity ^0.5.0;
 
@@ -657,7 +657,7 @@ contract IERC721Enumerable is IERC721 {
     function tokenByIndex(uint256 index) public view returns (uint256);
 }
 
-// File: @openzeppelin/contracts/token/ERC721/ERC721Enumerable.sol
+// File: node_modules\@openzeppelin\contracts\token\ERC721\ERC721Enumerable.sol
 
 pragma solidity ^0.5.0;
 
@@ -858,7 +858,7 @@ contract ERC721Enumerable is ERC165, ERC721, IERC721Enumerable {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC721/IERC721Metadata.sol
+// File: node_modules\@openzeppelin\contracts\token\ERC721\IERC721Metadata.sol
 
 pragma solidity ^0.5.0;
 
@@ -873,7 +873,7 @@ contract IERC721Metadata is IERC721 {
     function tokenURI(uint256 tokenId) external view returns (string memory);
 }
 
-// File: @openzeppelin/contracts/token/ERC721/ERC721Metadata.sol
+// File: node_modules\@openzeppelin\contracts\token\ERC721\ERC721Metadata.sol
 
 pragma solidity ^0.5.0;
 
@@ -964,7 +964,7 @@ contract ERC721Metadata is ERC165, ERC721, IERC721Metadata {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC721/ERC721Full.sol
+// File: node_modules\@openzeppelin\contracts\token\ERC721\ERC721Full.sol
 
 pragma solidity ^0.5.0;
 

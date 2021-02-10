@@ -1,4 +1,4 @@
-pragma solidity 0.5.0;
+pragma solidity ^0.5.0;
 
 import "./ERC721Full.sol";
 
@@ -16,5 +16,4 @@ contract Color is ERC721Full {
     _mint(msg.sender, _id);
     _colorExists[_color] = true;
   }
-
 }
