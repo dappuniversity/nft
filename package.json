@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "An Ethereum Marketplace",
   "author": "gregory@dappuniversity.com",
+  "contributors": [
+    "gregory@dappuniversity.com",
+    "Anton K. <antonkarlovskiy@outlook.com>"
+  ],
   "dependencies": {
     "@openzeppelin/contracts": "^2.3.0",
     "babel-polyfill": "6.26.0",
