@@ -1,3 +1,4 @@
+
 require('babel-register');
 require('babel-polyfill');
 
@@ -10,7 +11,7 @@ module.exports = {
     },
   },
   contracts_directory: './src/contracts/',
-  contracts_build_directory: './src/abis/',
+  contracts_build_directory: './src/built-contracts/',
   compilers: {
     solc: {
       optimizer: {
@@ -19,4 +20,4 @@ module.exports = {
       }
     }
   }
-}
+};
