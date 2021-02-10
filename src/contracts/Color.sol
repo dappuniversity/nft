@@ -6,10 +6,9 @@ contract Color is ERC721Full {
   string[] public colors;
   mapping(string => bool) _colorExists;
 
-  constructor() ERC721Full("Color", "COLOR") public {
-  }
+  constructor() ERC721Full("Color", "COLOR") public {}
 
-  // E.G. color = "#FFFFFF"
+  // e.g. color = "#FFFFFF"
   function mint(string memory _color) public {
     require(!_colorExists[_color]);
     uint _id = colors.push(_color);
