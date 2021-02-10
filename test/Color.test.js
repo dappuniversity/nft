@@ -36,14 +36,15 @@ contract('Color', (accounts) => {
     it('creates a new token', async () => {
       const result = await contract.mint('#EC058E');
       const totalSupply = await contract.totalSupply();
-      // SUCCESS
+
+      // Success
       assert.equal(totalSupply, 1);
       const event = result.logs[0].args;
       assert.equal(event.tokenId.toNumber(), 1, 'id is correct');
       assert.equal(event.from, '0x0000000000000000000000000000000000000000', 'from is correct');
       assert.equal(event.to, accounts[0], 'to is correct');
 
-      // FAILURE: cannot mint same color twice
+      // Failure: cannot mint same color twice
       await contract.mint('#EC058E').should.be.rejected;
     });
   });
@@ -56,11 +57,10 @@ contract('Color', (accounts) => {
       await contract.mint('#000000');
       const totalSupply = await contract.totalSupply();
 
-      let color;
       let result = [];
 
       for (let index = 0; index < totalSupply; index++) {
-        color = await contract.colors(index);
+        const color = await contract.colors(index);
         result.push(color);
       };
 
