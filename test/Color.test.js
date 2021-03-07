@@ -59,8 +59,9 @@ contract('Color', (accounts) => {
 
       let result = [];
 
+      let color;
       for (let index = 0; index < totalSupply; index++) {
-        const color = await contract.colors(index);
+        color = await contract.colors(index);
         result.push(color);
       };
 
