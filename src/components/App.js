@@ -117,7 +117,7 @@ class App extends Component {
             { this.state.colors.map((color, key) => {
               return(
                 <div key={key} className="col-md-3 mb-3">
-                  <div className="token" style={{ backgroundColor: color }}></div>
+                  <div className="token" style={{ background: '#'+color}}></div>
                   <div>{color}</div>
                 </div>
               )
